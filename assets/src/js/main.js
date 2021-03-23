@@ -1,0 +1,25 @@
+// IMG
+import '../img/amil.svg'
+import '../img/arrow-up-solid.svg'
+import '../img/bradesco.svg'
+import '../img/calendar-solid.svg'
+import '../img/clock-solid.svg'
+import '../img/close.svg'
+import '../img/check-green.svg'
+import '../img/check-solid.svg'
+import '../img/dws-vector-white-min.svg'
+import '../img/dws-vector-white.svg'
+import '../img/dws-vector.svg'
+import '../img/Imagens-simulador-1.jpg'
+import '../img/Imagens-simulador.jpg'
+import '../img/notredame.svg'
+import '../img/omint.svg'
+import '../img/portoseguro.svg'
+import '../img/sulamerica.svg'
+// JS
+import './single'
+import './blog'
+import './home'
+import './category'
+
+console.log('hi a')

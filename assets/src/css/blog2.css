@@ -1,0 +1,403 @@
+* {
+    box-sizing: border-box;
+}
+.mobile-hide {
+    display: none;
+}
+.row{
+    max-width: 84vw;
+    height: 100%;
+    min-height: 200px;
+    margin: 0.5% auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+/***PRIMARY***/
+.primary > a{
+    margin-top: 3%;
+    width: 100%;
+    height: auto;
+    position: relative;
+    border: 1px solid #DFE2E6;
+}
+.primary .primary-banner{
+    height: 100%;
+    max-height: 350px;
+    overflow: hidden;
+}
+.primary .primary-banner img{
+    height: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+.primary .primary-banner .img-text{
+    background-color: #263246;
+    color: #fff;
+    opacity: 0.7;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateY(-100%);
+    transition: 0.7s ease-in-out;
+}
+.primary .primary-banner:hover .img-text{
+    height: 100%;
+    opacity: 0.9;
+}
+.primary .primary-banner .img-text .texts{
+    opacity: 1;
+    margin: auto 2%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 100%;
+}
+.primary .primary-banner .img-text .texts h2{
+    font-size: 22px;
+    line-height: 2rem;
+    font-weight: 500;
+    margin-bottom: 2%;
+    text-shadow: 1px 1px 0.2px rgba(0,0,0,0.5);
+}
+.primary .primary-banner .img-text .texts p{
+    color: #f3f3f3;
+    font-size: 12px;
+    line-height: 1.1rem;
+    font-weight: 400;
+}
+/***PRIMARY SIDE***/
+.primary .side {
+    margin: 1rem 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.primary .side .popular {
+    width: 100%;
+    height: auto;
+}
+.primary .side .popular .title h2{
+    padding: 0 0.9rem;
+    font-size: 18px;
+    color: #fff;
+    background-color: #4c5970;
+}
+.primary .side .post-pop{
+    width: 100%;
+    background-color: #f5f5f8;
+    padding: 1rem 0.3rem;
+    margin: 0.2rem 0;
+}
+.primary .side .posts-wrapper h3{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #444;
+    margin-bottom: 0.3rem;
+}
+.primary .side .posts-wrapper .post-cat{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+}
+.primary .side .posts-wrapper .post-cat:hover{
+    text-decoration: underline;
+}
+/***CONTENT***/
+.site-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #FAFBFC;
+}
+.card-a{
+    width: 100%;
+    margin-bottom: 1rem;
+    position: relative;
+    border: 1px solid #DFE2E6;
+    box-shadow: 1px 1px 5px -2px rgba(0,0,0,0.3);
+    transition: 0.3s ease-in-out;
+}
+.card-a .card .blog-img{
+    height: 300px;
+    overflow: hidden;
+}
+.card-a .card .blog-img img{
+    height: 100%;
+}
+.card-a:hover{
+    transform: scale(1.02);
+}
+.card-a .card:hover .img-text{
+    opacity: 0.9;
+
+}
+.card-a .card .img-text{
+    background-color: #263246;
+    color: #fff;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-100%);
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    transition: 0.6s ease-in-out;
+    padding: 4%;
+}
+.card-a .card .img-text h3{
+    text-shadow: 1px 1px 0.2px rgba(0,0,0,0.5);
+}
+
+.newsletter-card{
+    width: 100%;
+    min-height: 200px;
+    background-color: #FDCD37;
+    margin: 0.25% 0;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.newsletter-card .news-content{
+    width: 100%;
+    text-align: center;
+}
+.newsletter-card .title h2{
+    font-size: 22px;
+    color: #263246;
+    font-weight: 400;
+}
+.newsletter-card .email-input{
+    max-width: 320px;
+    margin: 20px auto;
+    position: relative;
+}
+.newsletter-card .email-input img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    cursor: pointer;
+}
+.newsletter-card .email-input input{
+    width: 100%;
+    background-color: transparent !important;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    border-bottom: 1px solid #1E3A57;
+    padding: 7px;
+}
+.newsletter-card .email-input input::placeholder{
+    color: #333 !important;
+    font-size: 16px;
+}
+/***PRIMARY SIDE***/
+.simular-wrapper{
+    width: 100%;
+    height: auto;
+    background-color: #263246;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.simular .content{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+.simular .content h2{
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    line-height: 2rem;
+    margin-bottom: 5%;
+}
+.simular .content .simulator-btn{
+    width: 80%;
+    height: 32px;
+}
+.simular .content .simulator-btn a{
+    font-size: 12px;
+}
+@media (min-width: 820px) {
+    .row{
+        max-width: 72.18vw;
+        height: 100%;
+        min-height: 200px;
+        margin: 1rem auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .row.primary{
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .mobile-hide {
+        display: initial;
+    }
+    .card-a:nth-child(5){
+        width: 66%;
+    }
+    .card-a:nth-child(5) .blog-img img{
+        width: 100%;
+    }
+    .card-a:nth-last-child(7){
+        width: 66%;
+    }
+    .card-a:nth-last-child(7) .blog-img img{
+        width: 100%;
+    }
+    /***PRIMARY***/
+    .primary > a{ 
+        width: calc(67% - 0.5rem);
+        height: auto;
+        max-height: 450px;
+        position: relative;
+        border: 1px solid #DFE2E6;
+        margin: 0;
+    }
+    .primary .primary-banner{
+        max-height: 600px;
+        overflow: hidden;
+    }
+    .primary .primary-banner img{
+        height: 100%;
+        max-height: 600px;
+        object-fit: cover;
+    }
+    .primary .primary-banner .img-text{
+        background-color: #263246;
+        color: #fff;
+        opacity: 0.7;
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        transform: translateY(-100%);
+        transition: 0.7s ease-in-out;
+    }
+    .primary .primary-banner:hover .img-text{
+        height: 100%;
+        opacity: 0.9;
+    }
+    .primary .primary-banner .img-text .texts{
+        opacity: 1;
+        margin: auto 2%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        height: 100%;
+    }
+    .primary .primary-banner .img-text .texts h2{
+        font-size: 22px;
+        line-height: 2rem;
+        font-weight: 500;
+        margin-bottom: 2%;
+        text-shadow: 1px 1px 0.2px rgba(0,0,0,0.5);
+    }
+    .primary .primary-banner .img-text .texts p{
+        color: #f3f3f3;
+        font-size: 12px;
+        line-height: 1.1rem;
+        font-weight: 400;
+    }
+    .primary .primary-banner .img-text{
+        height: 40%;
+    }
+    .primary .primary-banner .img-text .texts h2{
+        font-size: 30px;
+    }
+    .primary .primary-banner .img-text .texts p{
+        color: #f3f3f3;
+        font-size: 14px;
+    }
+
+    /***PRIMARY SIDE***/
+    .primary .side {
+        margin: 0;
+        width: calc(33% - 0.5rem);
+        height: auto;
+        background-color: transparent;
+    }
+    .card-a{
+        width: calc(33% - 0.5rem);
+        margin-bottom: 1rem;
+    }
+    .newsletter-card{
+        width: 66%;
+        background-color: #FDCD37;
+        margin: 0;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .newsletter-card .title h2{
+        color: #263246;
+        font-weight: 400;
+    }
+    .newsletter-card .email-input{
+        width: 320px;
+        margin: 20px auto;
+        position: relative;
+    }
+    .newsletter-card .email-input img{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        cursor: pointer;
+    }
+    .newsletter-card .email-input input{
+        width: 100%;
+        background-color: transparent !important;
+        color: #333;
+        font-size: 16px;
+        font-weight: 400;
+        border: none;
+        border-bottom: 1px solid #1E3A57;
+        padding: 7px;
+    }
+    .newsletter-card .email-input input::placeholder{
+        color: #333 !important;
+        font-size: 16px;
+    }
+    .simular-wrapper{
+        width: calc(33% - 0.5rem);
+        margin-bottom: 1rem;
+    }
+    .simular .content{
+        margin: 0 auto;
+    }
+    .simular .content h2{
+        margin-bottom: 20%;
+    }
+    .simular .content .simulator-btn{
+        width: 200px;
+        height: 38px;
+    }
+}
